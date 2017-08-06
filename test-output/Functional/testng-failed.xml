@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional]">
+  <test name="AdminLogin(failed)">
+    <classes>
+      <class name="extentReport.AdminLogin">
+        <methods>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="adminLogin"/>
+        </methods>
+      </class> <!-- extentReport.AdminLogin -->
+    </classes>
+  </test> <!-- AdminLogin(failed) -->
+</suite> <!-- Failed suite [Functional] -->

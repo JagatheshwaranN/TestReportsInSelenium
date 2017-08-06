@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FunctionalSuite]">
+  <listeners>
+    <listener class-name="testNGReport.TestListener"/>
+  </listeners>
+  <test name="CreateAccount(failed)">
+    <classes>
+      <class name="testNGReport.CreateAnAccount">
+        <methods>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="createAccountRegistration"/>
+        </methods>
+      </class> <!-- testNGReport.CreateAnAccount -->
+    </classes>
+  </test> <!-- CreateAccount(failed) -->
+</suite> <!-- Failed suite [FunctionalSuite] -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Functional" duration-ms="16192" started-at="2017-08-06T09:02:31Z" finished-at="2017-08-06T09:02:47Z">
+    <groups>
+    </groups>
+    <test name="AdminLogin" duration-ms="16192" started-at="2017-08-06T09:02:31Z" finished-at="2017-08-06T09:02:47Z">
+      <class name="extentReport.AdminLogin">
+        <test-method status="PASS" signature="start()[pri:0, instance:extentReport.AdminLogin@38203]" name="start" is-config="true" duration-ms="10068" started-at="2017-08-06T14:32:31Z" finished-at="2017-08-06T14:32:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="adminLogin()[pri:0, instance:extentReport.AdminLogin@38203]" name="adminLogin" duration-ms="5935" started-at="2017-08-06T14:32:41Z" finished-at="2017-08-06T14:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="end(org.testng.ITestResult)[pri:0, instance:extentReport.AdminLogin@38203]" name="end" is-config="true" duration-ms="163" started-at="2017-08-06T14:32:47Z" finished-at="2017-08-06T14:32:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminLogin status=SUCCESS method=AdminLogin.adminLogin()[pri:0, instance:extentReport.AdminLogin@38203] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- extentReport.AdminLogin -->
+    </test> <!-- AdminLogin -->
+  </suite> <!-- Functional -->
+</testng-results>

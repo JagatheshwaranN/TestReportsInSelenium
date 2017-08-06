@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity" thread-count="1">
+	<test name="TestNGAnt">
+		<classes>
+		<!-- <class name="ant_buildtool_example.SampleProgram">
+			</class>
+			<class name="ant_buildtool_example.Selenium_TestNG_Ant">
+			</class> -->
+				<class name="xsltReport.CustomerLogin">
+			</class>
+		</classes>
+	
+	</test>
+</suite>
+

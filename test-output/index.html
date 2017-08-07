@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Functional">
-              <span class="suite-name border-passed">Functional</span>
+            <a href="#" class="navigator-link" panel-name="suite-FunctionalSuite">
+              <span class="suite-name border-failed">FunctionalSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Functional">
-                    <span>E:\ECLIPSE ENV\Selenium_Excercises\ReportsInSelenium\testNG-extent-report.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-FunctionalSuite">
+                    <span>E:\ECLIPSE ENV\Selenium_Excercises\ReportsInSelenium\testNG-report.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Functional">
+                  <a href="#" class="navigator-link " panel-name="testlist-FunctionalSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Functional">
+                  <a href="#" class="navigator-link " panel-name="group-FunctionalSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Functional">
+                  <a href="#" class="navigator-link " panel-name="times-FunctionalSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Functional">
+                  <a href="#" class="navigator-link " panel-name="reporter-FunctionalSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Functional">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-FunctionalSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Functional">
+                  <a href="#" class="navigator-link " panel-name="chronological-FunctionalSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Functional" class="hide-methods passed suite-Functional"> (hide)</a> <!-- hide-methods passed suite-Functional -->
-                      <a href="#" panel-name="suite-Functional" class="show-methods passed suite-Functional"> (show)</a> <!-- show-methods passed suite-Functional -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FunctionalSuite" class="hide-methods failed suite-FunctionalSuite"> (hide)</a> <!-- hide-methods failed suite-FunctionalSuite -->
+                      <a href="#" panel-name="suite-FunctionalSuite" class="show-methods failed suite-FunctionalSuite"> (show)</a> <!-- show-methods failed suite-FunctionalSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Functional">
+                    <div class="method-list-content failed suite-FunctionalSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Functional" title="extentReport.AdminLogin" hash-for-method="adminLogin">adminLogin</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalSuite" title="testNGReport.CreateAnAccount" hash-for-method="createAccountRegistration">createAccountRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Functional -->
+                    </div> <!-- method-list-content failed suite-FunctionalSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -115,69 +115,107 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Functional" class="panel Functional">
-          <div class="suite-Functional-class-passed">
+        <div panel-name="suite-FunctionalSuite" class="panel FunctionalSuite">
+          <div class="suite-FunctionalSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">extentReport.AdminLogin</span>
+              <img src="failed.png"/>
+              <span class="class-name">testNGReport.CreateAnAccount</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="adminLogin">
-                  </a> <!-- adminLogin -->
-                  <span class="method-name">adminLogin</span>
+                  <a name="createAccountRegistration">
+                  </a> <!-- createAccountRegistration -->
+                  <span class="method-name">createAccountRegistration</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [My Account Information] but found [Your Account Has Been Created!]
+	at testNGReport.CreateAnAccount.createAccountRegistration(CreateAnAccount.java:82)
+... Removed 29 stack frames<br/> java.lang.AssertionError: expected [My Account Information] but found [Your Account Has Been Created!]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at testNGReport.CreateAnAccount.createAccountRegistration(CreateAnAccount.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>testNGReport.CreateAnAccount.createAccountRegistration(CreateAnAccount.java:82)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional-class-passed -->
-        </div> <!-- panel Functional -->
-        <div panel-name="test-xml-Functional" class="panel">
+          </div> <!-- suite-FunctionalSuite-class-failed -->
+        </div> <!-- panel FunctionalSuite -->
+        <div panel-name="test-xml-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\ECLIPSE ENV\Selenium_Excercises\ReportsInSelenium\testNG-extent-report.xml</span>
+            <span class="header-content">E:\ECLIPSE ENV\Selenium_Excercises\ReportsInSelenium\testNG-report.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Functional&quot;&gt;
-  &lt;test name=&quot;AdminLogin&quot;&gt;
+&lt;suite name=&quot;FunctionalSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testNGReport.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;CreateAccount&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;extentReport.AdminLogin&quot;/&gt;
+      &lt;class name=&quot;testNGReport.CreateAnAccount&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AdminLogin --&gt;
-&lt;/suite&gt; &lt;!-- Functional --&gt;
+  &lt;/test&gt; &lt;!-- CreateAccount --&gt;
+&lt;/suite&gt; &lt;!-- FunctionalSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Functional" class="panel">
+        <div panel-name="testlist-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Functional</span>
+            <span class="header-content">Tests for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AdminLogin (1 class)</span>
+                <span class="test-name">CreateAccount (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Functional" class="panel">
+        <div panel-name="group-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Functional</span>
+            <span class="header-content">Groups for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Functional" class="panel">
+        <div panel-name="times-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Functional</span>
+            <span class="header-content">Times for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Functional');
-function tableData_Functional() {
+suiteTableInitFunctions.push('tableData_FunctionalSuite');
+function tableData_FunctionalSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -185,51 +223,59 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'adminLogin')
-data.setCell(0, 2, 'extentReport.AdminLogin')
-data.setCell(0, 3, 5935);
-window.suiteTableData['Functional']= { tableData: data, tableDiv: 'times-div-Functional'}
+data.setCell(0, 1, 'createAccountRegistration')
+data.setCell(0, 2, 'testNGReport.CreateAnAccount')
+data.setCell(0, 3, 17596);
+window.suiteTableData['FunctionalSuite']= { tableData: data, tableDiv: 'times-div-FunctionalSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
-              <div id="times-div-Functional">
-              </div> <!-- times-div-Functional -->
+              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <div id="times-div-FunctionalSuite">
+              </div> <!-- times-div-FunctionalSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Functional" class="panel">
+        <div panel-name="reporter-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Functional</span>
+            <span class="header-content">Reporter output for FunctionalSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createAccountRegistration</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href="E:\ECLIPSE ENV\Selenium_Excercises\ReportsInSelenium//src//test//resources//testNGScreenshots//failure//08-07-2017_21-52-createAccountRegistration.png"><img src="file:///E:\ECLIPSE ENV\Selenium_Excercises\ReportsInSelenium//src//test//resources//testNGScreenshots//failure//08-07-2017_21-52-createAccountRegistration.png" alt=""height='100' width='100'/> <br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Functional" class="panel">
+        <div panel-name="ignored-methods-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Functional" class="panel">
+        <div panel-name="chronological-FunctionalSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">extentReport.AdminLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testNGReport.CreateAnAccount</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">start</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">adminLogin</span>
-                <span class="method-start">10068 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createAccountRegistration</span>
+                <span class="method-start">25752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">end([TestResult name=adminLogin status=SUCCESS method=AdminLogin.adminLogin()[pri:0, instance:extentRepo...)</span>
-                <span class="method-start">16005 ms</span>
+                <span class="method-name">end</span>
+                <span class="method-start">44271 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

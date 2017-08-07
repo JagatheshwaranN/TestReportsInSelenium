@@ -14,7 +14,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-// The class is created with name : SampleProgram
+// The class is created with name : Selenium_TestNG_Ant
 public class Selenium_TestNG_Ant {
 	
 	// Declaring global variable

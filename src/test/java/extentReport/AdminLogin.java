@@ -1,5 +1,11 @@
+/**
+ * @author Jagatheshwaran
+ */
+
+// Importing Package extentReport
 package extentReport;
 
+// Importing the predefined class libraries
 import junit.framework.Assert;
 
 import org.openqa.selenium.By;
@@ -14,6 +20,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+// The class is created with name : AdminLogin
 public class AdminLogin {
 
 	// Declaring global variables
@@ -47,8 +54,6 @@ public class AdminLogin {
 		driver.findElement(By.name("password")).sendKeys("admin@123");
 		driver.findElement(By.id("tdb1")).click();
 
-		// Verifying positive scenario
-
 		// Capturing the current page url
 		String ActualUrl = driver.getCurrentUrl();
 		String ExpectedUrl = "http://www.gcrit.com/build3/admin/index.php";
@@ -70,8 +75,10 @@ public class AdminLogin {
 			test.log(LogStatus.FAIL, "Admin Login UnSuccesful", image);
 			System.out.println("Admin Login UnSuccesful");
 		}
+		
 		// The below method will close the current browser window
 		driver.close();
+		
 		report.endTest(test);
 		report.flush();
 

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Functional]">
-  <test name="AdminLogin(failed)">
+<suite name="Failed suite [FunctionalSuite]">
+  <listeners>
+    <listener class-name="testNGReport.TestListener"/>
+  </listeners>
+  <test name="CreateAccount(failed)">
     <classes>
-      <class name="extentReport.AdminLogin">
+      <class name="testNGReport.CreateAnAccount">
         <methods>
           <include name="start"/>
           <include name="end"/>
-          <include name="adminLogin"/>
+          <include name="createAccountRegistration"/>
         </methods>
-      </class> <!-- extentReport.AdminLogin -->
+      </class> <!-- testNGReport.CreateAnAccount -->
     </classes>
-  </test> <!-- AdminLogin(failed) -->
-</suite> <!-- Failed suite [Functional] -->
+  </test> <!-- CreateAccount(failed) -->
+</suite> <!-- Failed suite [FunctionalSuite] -->

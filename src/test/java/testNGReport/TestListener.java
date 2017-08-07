@@ -1,15 +1,11 @@
 /**
  * @author Jagatheshwaran
+ * 
  */
-
-/**
- * Importing Package
- */
+// Package is created as testNGReport
 package testNGReport;
 
-/**
- * Importing the necessary library classes
- */
+// Importing the predefined class libraries
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -23,10 +19,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-/**
- * A class is created with name : TestListener
- * Listener class extends CreateAnAccount class and implements ITestListener
- */
+// The class is created with name : TestListener
+// The class TestListener implements ITestListener to use its methods and extends CreateAnAccount class
 public class TestListener extends CreateAnAccount implements ITestListener {
 
 	/**
@@ -46,7 +40,7 @@ public class TestListener extends CreateAnAccount implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		if (!result.isSuccess()) {
 			String userDirectory = System.getProperty("user.dir");
-			String customLocation = "//src//test//resources//screenshots//failure//";
+			String customLocation = "//src//test//resources//testNGScreenshots//failure//";
 			String failureImageFileName = userDirectory + customLocation + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + "-" + result.getMethod().getMethodName() + ".png";
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			try {

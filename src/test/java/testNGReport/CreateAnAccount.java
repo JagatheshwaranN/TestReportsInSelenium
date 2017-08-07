@@ -1,17 +1,11 @@
 /**
- * The below class is created to perform CreateAccount Functionality
- *
  * @author Jagatheshwaran
+ * 
  */
-
-/**
- * Importing Package testNGReport
- */
+// Package is created as testNGReport
 package testNGReport;
 
-/**
- * Importing the necessary predefined classes
- */
+// Importing the predefined class libraries
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,13 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-/**
- * A class is created with name : CreateAnAccount CreateAnAccount class extends
- * Common_Functions class to utilize the reusable methods of the
- * Common_Functions class
- * 
- * @author Jagatheshwaran
- */
+// The class is created with name : CreateAnAccount
 public class CreateAnAccount {
 
 	// Declaring global variable

@@ -20,6 +20,7 @@ public class CustomerLogin {
 	// Declaring global variable
 	WebDriver driver;
 
+	// BeforeTest - The annotated method will be run before any Test methods belonging to classes is run
 	@BeforeTest
 	public void start() {
 		
@@ -33,9 +34,9 @@ public class CustomerLogin {
 
 	/**
 	 * The method name is : customerLoginPositive 
-	 * This method is annotated with Test.It will act as a test method 
-	 * This method will launch browser
-	 * Navigate to the URL and login to the application
+	 * This method is annotated with Test.It will act as a test method.
+	 * This method will launch browser.
+	 * Navigate to the URL and login to the application.
 	 * 
 	 */
 	@Test (priority=1)
@@ -97,6 +98,7 @@ public class CustomerLogin {
 
 	}
 
+	// AfterTest - The annotated method will be run after all the Test methods belonging to the classes have run
 	@AfterTest
 	public void end() {
 		

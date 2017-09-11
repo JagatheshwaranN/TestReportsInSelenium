@@ -20,6 +20,7 @@ public class Selenium_TestNG_Ant {
 	// Declaring global variable
 	WebDriver driver;
 	
+	// BeforeTest - The annotated method will be run before any Test methods belonging to classes is run
 	@BeforeTest
 	public void start()
 	{
@@ -49,6 +50,7 @@ public class Selenium_TestNG_Ant {
 		driver.findElement(By.id("tdb5")).click();
 
 		String ExpectedUrl = "http://www.gcrit.com/build3/index.php";
+		
 		// Capturing the Current page url
 		String ActualUrl = driver.getCurrentUrl();
 
@@ -66,6 +68,8 @@ public class Selenium_TestNG_Ant {
 
 		
 	}
+	
+	// AfterTest - The annotated method will be run after all the Test methods belonging to the classes have run
 	@AfterTest
 	public void end()
 	{

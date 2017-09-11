@@ -21,6 +21,7 @@ public class CreateAnAccount {
 	// Declaring global variable
 	public static WebDriver driver;
 
+	// BeforeMethod - The annotated method will be run before each Test methods
 	@BeforeMethod
 	public void start() {
 
@@ -87,6 +88,7 @@ public class CreateAnAccount {
 		}
 	}
 	
+	// AfterMethod - The annotated method will be run after each Test Methods
 	@AfterMethod
 	public void end() {
 		

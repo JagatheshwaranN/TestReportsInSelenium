@@ -28,6 +28,7 @@ public class AdminLogin {
 	public static ExtentReports report;
 	public static ExtentTest test;
 
+	// BeforeMethod - The annotated method will be run before each Test methods
 	@BeforeMethod
 	public void start() {
 
@@ -66,6 +67,7 @@ public class AdminLogin {
 
 	}
 
+	// AfterMethod - The annotated method will be run after each Test Methods
 	@AfterMethod
 	public void end(ITestResult result) {
 

@@ -1,0 +1,38 @@
+Reports in Selenium
+++++++++++++++++++++
+In this project we are going to see three types of reports used in selenium automation
+
+1.testNG Report
+2.XSLT Report
+3.Extent Report
+
+testNG Report
++++++++++++++
+1.It is the default report generated with testNG.
+2.I have created the testNG report with advanced options like screen shot is attached with the report
+3.ITestListener is used to capture the pass and fail scenario of the functionality and based on this screen shot is captured and attached with the report.
+4.Reporter.log is used to add the screen captured to the report.
+5.testNG report is available under the test-output -> index.html.
+
+XSLT Report
++++++++++++
+1.XSLT report is one type of selenium test automation report.
+2.For XSLT report,you need to install Ant build tool and you have to run the build before generation of every XSLT report.
+3.XSLT report will represent the result in PIE chart form with the descriptions.
+4.XSLT report is available under the testng-xslt -> index.html.
+
+Extent Report
++++++++++++++
+1.Extent report is an third party report used for selenium automation report.
+2.TO use Extent report,you have to add Extent report jar or add maven dependency for Extent report.
+3.ExtentReports and ExtentTest is used for Extent report generation.
+4.Extent report will represent the result of the automation in PIE Chart as Overview.
+5.Extent report will also have some advanced options to optimize the report.
+6.I have implemented the basic Extent report.
+7.Extent report is available under the extent-report -> extentReport.html.
+
+How to use Ant Build tool
++++++++++++++++++++++++++
+
+
+
